@@ -118,7 +118,7 @@ For practical purposes, that means in the initial values for the floor should be
 
 **❓ How can you tell if the ceiling met the floor?**
 
-5. By now you know that the value at the ``midpoint`` is not value you are looking for, and the value could still be there! Your next job is to update the ``ceiling`` or the ``floor``:
+5. By now you know that the value at the ``midpoint`` is not the value you are looking for, and the value could still be there! Your next job is to update the ``ceiling`` or the ``floor``:
     * If the value you are looking for is greater than the value at the ``midpoint``, you know that the value is between the ``midpoint`` and the ceiling. You know for sure that the value at ``midpoint`` is not what you are looking for, so you can change your ``floor`` to be the ``midpoint``.
     * If the value you are looking for is less than the value at the ``midpoint``, you know that the value is between the ``floor`` and the ``midpoint``. You should now change the ``ceiling`` to be the ``midpoint`` 
 
