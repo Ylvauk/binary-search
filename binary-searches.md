@@ -131,20 +131,21 @@ For practical purposes, that means in the initial values for the floor should be
 Let's try to find out if ``11`` is in the array ``[1, 4, 6, 12, 34, 50]``
 
 1. First we must calculate ceiling and floor. Ceiling will be the array's length: ``6``, and the floor will be: ``-1``
-2. We should calculate the ``midpoint``. The formula above tells us it should be ``3``.
-3. Is ``array[3]`` our value? ``12`` is not ``11``, so we don't get to leave early
+2. We should calculate the ``midpoint``. The formula above tells us it should be ``2``.
+3. Is ``array[2]`` our value? ``6`` is not ``11``, so we don't get to leave early
 4. Did our ceiling meet the floor? Not yet, so the value might still be out there
-5. Is ``11`` greater than the value at our ``midpoint``? Nope, so let's update ``ceiling`` to be ``3``
-6. Let's calculate ``midpoint`` again. ``Floor`` is still ``0``, and ``ceiling`` is ``3``. ``Midpoint`` should be ``1``
-7. Is ``array[1]`` the value we are looking for? Nope!
+5. Is ``11`` greater than the value at our ``midpoint``? Yes, so let's update ``floor`` to be ``2``
+6. Let's calculate ``midpoint`` again. ``Floor`` still ``2``, and ``ceiling`` is ``6``. ``Midpoint`` should be ``4``
+7. Is ``array[4]`` the value we are looking for? Nope!
 8. Did our ceiling meet the floor? Nope!
-9. What is our new ``ceiling`` or ``floor``? ``11`` is greater than ``4``, so let's update our ``floor`` to be ``1``
-10. Back to calculating the ``midpoint`` we go. ``Ceiling`` is still ``3`` and floor is ``1``. Midpoint should be ``2``
-11. Is ``array[2]`` the value we are looking for? Nope!
+9. What is our new ``ceiling`` or ``floor``? ``11`` is less than ``34``, so let's update our ``ceiling`` to be ``4``
+10. Back to calculating the ``midpoint`` we go. ``Ceiling`` is still ``4`` and floor is ``2``. Midpoint should be ``3``
+11. Is ``array[3]`` the value we are looking for? Nope!
 12. Did our ceiling meet the floor? Nope!
-13. ``11`` is greater than ``6``, so our now ``floor`` is the middle: ``2``!
-7. Is ``array[2]`` the value we are looking for? Nope!
-8. Did our ceiling meet the floor? Nothing comes between our floor: ``2``, and our ceiling ``3``, so we know that the value is not in our array!
+13. ``11`` is less than ``12``, so our now ``ceiling`` is the middle: ``3``!
+14. Let's calculate ``midpoint`` again. ``Floor`` still ``2``, and ``ceiling`` is ``3``. ``Midpoint`` should be ``2``
+15. Is ``array[2]`` the value we are looking for? Nope!
+16. Did the celing meet the floor? Absolutely - the value is not there
 
 ___
 ## Essential Questions
