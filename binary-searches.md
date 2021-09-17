@@ -130,7 +130,7 @@ For practical purposes, that means in the initial values for the floor should be
 
 Let's try to find out if ``11`` is in the array ``[1, 4, 6, 12, 34, 50]``
 
-1. First we must calculate ceiling and floor. Ceiling will be the array's length: ``6``, and the floor will be: ``0``
+1. First we must calculate ceiling and floor. Ceiling will be the array's length: ``6``, and the floor will be: ``-1``
 2. We should calculate the ``midpoint``. The formula above tells us it should be ``3``.
 3. Is ``array[3]`` our value? ``12`` is not ``11``, so we don't get to leave early
 4. Did our ceiling meet the floor? Not yet, so the value might still be out there
