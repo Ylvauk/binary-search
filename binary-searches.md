@@ -88,7 +88,7 @@ As should be expected, brute force solutions are usually very slow because they 
 
 ## Binary Searches
 
-If you were born before 2000, chances are you have used a physical dictionary in your life. Did you know that you were likely using an variation of a binary search when you were looking for a definition of a word? Let's say you wanted to the definition of  ``Despondent``, if you flipped the dictionary and ended up with words the started with ``C``, you knew to look in later pages. If you then found yourself with words that started with ``E``, you knew to look in previous pages, between where ``C`` and ``E`` are. You could then have kept on zeroing in until you found ``Despondent`` - which means "in low spirits from loss of hope or courage"
+If you were born before 2000, chances are you have used a physical dictionary in your life. Did you know that you were likely using an variation of a binary search when you were looking for a definition of a word? Let's say you wanted to look up the definition of  ``Delightful``, if you flipped the dictionary and ended up with words the started with ``C``, you knew to look in later pages. If you then found yourself with words that started with ``E``, you knew to look in previous pages, between where ``C`` and ``E`` are. You could then have kept on zeroing in until you found ``Delightful`` - which means "causing delight; charming".
 
 
 **❓ What about the dictionaries allows you to take this approach to finding definitions?**
